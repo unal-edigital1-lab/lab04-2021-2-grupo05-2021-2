@@ -36,3 +36,10 @@ Y las salidas:
 En el repositorio proporcionado por el profesor nos encontramos con el archivo de Quartus BancoRegistro.v :
 
 ![Screenshot](Imagenes/BancoRegistro.png)
+
+En este módulo proporcionado nos encontramos con la descripción en verilog del banco de registro. Como primer paso se definen los parámetros `BIT_ADDR` y `BIT_DATO`, donde el primero refiere al tamaño de bits necesario para la dirección del registro, que en este caso son 3 bits, ya que son 8 registros. El segundo se re refiera al tamaño en bits de cada registro, que ya se habían mencionado que eran 4 bits. Posteriormente gracias a esto se definen las entradas y las salidas del bloque de banco de registro que ya se habían trabajado.
+
+El siguiente paso será adecuado a la configuración del banco de registros como tal, donde se define el tamaño del mismo, es decir, el número de registros que tendrá el banco, comprendido por NREG = 2 ** BIT_ADDR.
+Así mismo se asignan los datos de salida que tendrá el banco de registro según la dirección proporcionada con anterioridad.
+
+Para la escritura se sabe que siempre que la señal RegWrite sea 1, el registro de la dirección addrW será datW.
