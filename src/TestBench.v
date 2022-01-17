@@ -1,26 +1,5 @@
 `timescale 1ns / 1ps
 
-////////////////////////////////////////////////////////////////////////////////
-// Company: 
-// Engineer:
-//
-// Create Date:   21:29:15 10/17/2019
-// Design Name:   BancoRegistro
-// Module Name:   C:/Users/UECCI/Documents/GitHub/SPARTAN6-ATMEGA-MAX5864/lab/lab07-BancosRgistro/bancoreg/src/TestBench.v
-// Project Name:  lab07-BancosRgistro
-// Target Device:  
-// Tool versions:  
-// Description: 
-//
-// Verilog Test Fixture created by ISE for module: BancoRegistro
-//
-// Dependencies:
-// 
-// Revision:
-// Revision 0.01 - File Created
-// Additional Comments:
-// 
-////////////////////////////////////////////////////////////////////////////////
 
 module TestBench;
 
@@ -55,21 +34,24 @@ module TestBench;
 		addrRa = 0;
 		addrRb = 0;
 		addrW = 0;
-		datW = 0;
-		RegWrite = 0;
+		datW = 4;
+		RegWrite = 1;
 		clk = 0;
 		rst = 0;
 
 		// Wait 100 ns for global reset to finish
 		#100;
       for (addrRa = 0; addrRa < 8; addrRa = addrRa + 1) begin
-			#5 addrRb=addrRa+8;
-			 $display("el valor de registro %d =  %d y %d = %d", addrRa,datOutRa,addrRb,datOutRb) ;
-    end
-	 
+			#5 addrRb = addrRa + 8;
+			 $display("el valor del registro %d =  %d y %d = %d",
+							addrRa, datOutRa, addrRb, datOutRb) ;
+			#1 datW = datW + 1;
+		end
+	end	
+	
+	always #1 clk = ~clk;
 		
-		
-	end
+	
       
 endmodule
 
