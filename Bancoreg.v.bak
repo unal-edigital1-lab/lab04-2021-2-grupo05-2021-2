@@ -9,8 +9,9 @@ module Bancoreg(
 	 input rst, // reset
 	 
     output [6:0] sseg,
-    output reg [3:0] an
-	 );
+    output reg [3:0] an,
+	 
+    );
 
 // Conexiones de salida banco de registro
 wire [3:0] datOutRa; 
@@ -22,8 +23,7 @@ BancoRegistro #(.BIT_ADDR(3), .BIT_DATO(4)) BR(.addrRa(addrRa), .addrRb(addrRb),
  .RegWrite(RegWrite), .clk(clk), .rst(rst));
  
 //Instanciacion de display
-display disp(.datoRA(datOutRa), .datoRB(datOutRb), .addrRa(addrRa), .addrRb(addrRb), 
- .clk(clk), .sseg(sseg), .an(an), .led(led));
-
+display disp(.datA(datOutRa), .datB(datOutRb), .addrRa(addrRa), .addrRb(addrRb), 
+.clk(clk), .sseg(sseg), .an(an), .led(led));
 
 endmodule

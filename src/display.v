@@ -1,10 +1,15 @@
 `timescale 1ns / 1ps
 module display(
-    input [15:0] num,
-    input clk,
-    output [0:6] sseg,
-    output reg [3:0] an,
-	 input rst
+    //input [15:0] num, // el programa era de 16 entradas (4 paquetes de BCD 4 bits)
+	 input [3:0] datoRA, // 4 bits salida registro A (1 display)
+	 input [3:0] datoRB, // 4 bits salida registro B (1 display)
+	 input [3:0] addRa, // 4 bits dirección registro A (1 display)
+	 input [3:0] addRb, // 4 bits dirección registro B (1 display)
+    input clk, //Reloj
+    output [0:6] sseg, // Salida 7 segmentos
+    output reg [3:0] an, // 4 anodos
+	 input rst, // reset
+	 output led
     );
 
 
@@ -37,10 +42,10 @@ always @(posedge enable) begin
 			count<= count+1;
 			an<=4'b1101; 
 			case (count) 
-				2'h0: begin bcd <= num[3:0];   an<=4'b1110; end 
-				2'h1: begin bcd <= num[7:4];   an<=4'b1101; end 
-				2'h2: begin bcd <= num[11:8];  an<=4'b1011; end 
-				2'h3: begin bcd <= num[15:12]; an<=4'b0111; end 
+				2'h0: begin bcd <= datoRA;   an<=4'b1110; end 
+				2'h1: begin bcd <= datoRB;   an<=4'b1101; end 
+				2'h2: begin bcd <= addRa;    an<=4'b1011; end 
+				2'h3: begin bcd <= addRb;    an<=4'b0111; end 
 			endcase
 		end
 end
