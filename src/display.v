@@ -8,8 +8,9 @@ module display(
     input clk, //Reloj
     output [0:6] sseg, // Salida 7 segmentos
     output reg [3:0] an, // 4 anodos
-	 input rst, // reset
-	 output led
+	 output led,
+	 input rst// reset
+	
     );
 
 

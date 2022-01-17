@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Bancoreg
-Mon Jan 17 12:11:59 2022
+Mon Jan 17 12:50:14 2022
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -37,7 +37,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Failed - Mon Jan 17 12:11:59 2022           ;
+; Analysis & Synthesis Status        ; Failed - Mon Jan 17 12:50:13 2022           ;
 ; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                      ; Bancoreg                                    ;
 ; Top-level Entity Name              ; Bancoreg                                    ;
@@ -162,7 +162,7 @@ https://fpgasoftware.intel.com/eula.
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Mon Jan 17 12:11:49 2022
+    Info: Processing started: Mon Jan 17 12:50:03 2022
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Bancoreg -c Bancoreg
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 8 of the 8 processors detected
@@ -174,15 +174,14 @@ Info (12021): Found 1 design units, including 1 entities, in source file src/ban
     Info (12023): Found entity 1: BancoRegistro File: C:/Users/nicov/OneDrive/Documents/GitHub/lab04-2021-2-grupo05-2021-2/src/BancoRegistro.v Line: 3
 Info (12021): Found 1 design units, including 1 entities, in source file bancoreg.v
     Info (12023): Found entity 1: Bancoreg File: C:/Users/nicov/OneDrive/Documents/GitHub/lab04-2021-2-grupo05-2021-2/Bancoreg.v Line: 2
-Warning (10236): Verilog HDL Implicit Net warning at Bancoreg.v(21): created implicit net for "addrW" File: C:/Users/nicov/OneDrive/Documents/GitHub/lab04-2021-2-grupo05-2021-2/Bancoreg.v Line: 21
-Warning (10236): Verilog HDL Implicit Net warning at Bancoreg.v(26): created implicit net for "led" File: C:/Users/nicov/OneDrive/Documents/GitHub/lab04-2021-2-grupo05-2021-2/Bancoreg.v Line: 26
+Warning (10236): Verilog HDL Implicit Net warning at Bancoreg.v(26): created implicit net for "addrW" File: C:/Users/nicov/OneDrive/Documents/GitHub/lab04-2021-2-grupo05-2021-2/Bancoreg.v Line: 26
 Info (12127): Elaborating entity "Bancoreg" for the top level hierarchy
-Error (10663): Verilog HDL Port Connection error at Bancoreg.v(26): output or inout port "an" must be connected to a structural net expression File: C:/Users/nicov/OneDrive/Documents/GitHub/lab04-2021-2-grupo05-2021-2/Bancoreg.v Line: 26
+Error (10663): Verilog HDL Port Connection error at Bancoreg.v(29): output or inout port "an" must be connected to a structural net expression File: C:/Users/nicov/OneDrive/Documents/GitHub/lab04-2021-2-grupo05-2021-2/Bancoreg.v Line: 29
 Error (12153): Can't elaborate top-level user hierarchy
-Error: Quartus Prime Analysis & Synthesis was unsuccessful. 2 errors, 3 warnings
-    Error: Peak virtual memory: 4703 megabytes
-    Error: Processing ended: Mon Jan 17 12:11:59 2022
-    Error: Elapsed time: 00:00:10
+Error: Quartus Prime Analysis & Synthesis was unsuccessful. 2 errors, 2 warnings
+    Error: Peak virtual memory: 4699 megabytes
+    Error: Processing ended: Mon Jan 17 12:50:14 2022
+    Error: Elapsed time: 00:00:11
     Error: Total CPU time (on all processors): 00:00:28
 
 

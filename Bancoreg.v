@@ -9,21 +9,24 @@ module Bancoreg(
 	 input rst, // reset
 	 
     output [6:0] sseg,
-    output reg [3:0] an
+    output reg [3:0] an,
+	 output led
+	 
 	 );
 
-// Conexiones de salida banco de registro
-wire [3:0] datOutRa; 
-wire [3:0] datOutRb;
+
 	
-//Instanciación de BancoRegistro
-BancoRegistro #(.BIT_ADDR(3), .BIT_DATO(4)) BR(.addrRa(addrRa), .addrRb(addrRb), 
-.datOutRa(datOutRa), .datOutRb(datOutRb), .addrW(addrW), .datW(datW),
- .RegWrite(RegWrite), .clk(clk), .rst(rst));
- 
-//Instanciacion de display
-display disp(.datoRA(datOutRa), .datoRB(datOutRb), .addrRa(addrRa), .addrRb(addrRb), 
- .clk(clk), .sseg(sseg), .an(an), .led(led));
 
+	//conexiones entre el top y el modulo display y banco de registro
+	
+	wire[3:0] datOutRa; //datos de los 2 registros que se leen simultaneamente
+   wire [3:0] datOutRb;
+	
+	//instancia modulo bancoRegistro
+	BancoRegistro #(.BIT_ADDR(3), .BIT_DATO(4)) B(.addrRa(addrRa), .addrRb(addrRb), .datOutRa(datOutRa), .datOutRb(datOutRb), .addrW(addrW), .datW(datW), .RegWrite(RegWrite), .clk(clk), .rst(rst));
+	
+	//instancia modulo display
+	display disp(.datoRA(datOutRa), .datoRB(datOutRb), .addrRa(addrRa), .addrRb(addrRb), .clk(clk), .sseg(sseg), .an(an), .led(led));
+	
+	endmodule
 
-endmodule
