@@ -1,37 +1,38 @@
 `timescale 1ns / 1ps
 
-module BancoRegistro #(      		 //   #( Parametros
-         parameter BIT_ADDR = 8,  //   BIT_ADDR Número de bit para la dirección
-         parameter BIT_DATO = 4  //  BIT_DATO  Número de bit para el dato
+module BancoRegistro #(      		 // Se definen los parametros 
+         parameter BIT_ADDR = 3,  // Parametro de bits para la dirección del registro  
+         parameter BIT_DATO = 4  //  Parametro de tamaño de bits del registro
 	)
 	(
-    input [BIT_ADDR-1:0] addrRa,
-    input [BIT_ADDR-1:0] addrRb,
+    input [BIT_ADDR-1:0] addrRa, // Entrada dirección de registro A
+    input [BIT_ADDR-1:0] addrRb, // Entrada dirección de registro B
     
-	 output [BIT_DATO-1:0] datOutRa,
-    output [BIT_DATO-1:0] datOutRb,
+	 output [BIT_DATO-1:0] datOutRa, // Salida dato de registro A
+    output [BIT_DATO-1:0] datOutRb, // Salida dato de registro B
     
-	 input [BIT_ADDR:0] addrW,
-    input [BIT_DATO-1:0] datW,
+	 input [BIT_ADDR-1:0] addrW, // Entrada dirección de escritura
+    input [BIT_DATO-1:0] datW, //Entrada dato de 4 bits
     
-	 input RegWrite,
-    input clk,
-    input rst
+	 input RegWrite, // Entrada pulsador RegWrite
+    input clk, // Entrada reloj
+    input rst // Entrada reset
     );
 
-// La cantdiad de registros es igual a: 
-localparam NREG = 2 ** BIT_ADDR;
+
+localparam NREG = 2 ** BIT_ADDR; // Numero de registros (2**3=8)
   
 //configiración del banco de registro 
 reg [BIT_DATO-1: 0] breg [NREG-1:0];
 
 
-assign  datOutRa = breg[addrRa];
+assign  datOutRa = breg[addrRa]; // El dato de salida será igual a lo que tenga el banco de registros en esa dirección
 assign  datOutRb = breg[addrRb];
 
-always @(posedge clk) begin
-	if (RegWrite == 1)
-     breg[addrW] <= datW;
+// Esto es para la escritura:
+always @(posedge clk) begin // Para todo flanco de reloj ascendente
+	if (RegWrite == 1) // Siempre que la señal RegWrite sea 1
+     breg[addrW] <= datW; // El banco de registros en esa dirección dada será datW
   end
 
 
