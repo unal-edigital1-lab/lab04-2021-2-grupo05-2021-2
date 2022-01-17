@@ -9,4 +9,13 @@ Para empezar, se puede definir a un registro como una memoria de almacenamiento 
 
 ## Banco de registro
 Para la implementación necesaria para el banco de registro se deben tener en cuenta las siguientes condiciones a la hora de elaborar el diseño:
-* Debe contar con 8 registros de 4 bits
+* Debe contar con 8 registros de 4 bits.
+* Lectura de 2 registros simultaneos.
+* Señal que controla la escritura de un registro (RegWrite).
+* Contar con señal reset.
+* Visualizacion de la informacion en displays
+* Ingreso de informacion por medio de interruptores
+
+Teniendo en cuenta lo anterior, los bloques a realizar resultan de la siguiente manera:
+
+![Screenshot](Imagenes/bloques.jpg)
