@@ -10,12 +10,25 @@ Para empezar, se puede definir a un registro como una memoria de almacenamiento 
 ## Banco de registro
 Para la implementación necesaria para el banco de registro se deben tener en cuenta las siguientes condiciones a la hora de elaborar el diseño:
 * Debe contar con 8 registros de 4 bits.
-* Lectura de 2 registros simultaneos.
+* Lectura de 2 registros simultáneos.
 * Señal que controla la escritura de un registro (RegWrite).
 * Contar con señal reset.
-* Visualizacion de la informacion en displays
-* Ingreso de informacion por medio de interruptores
+* Visualización de la información en displays
+* Ingreso de información por medio de interruptores
 
 Teniendo en cuenta lo anterior, los bloques a realizar resultan de la siguiente manera:
 
 ![Screenshot](Imagenes/bloques.jpg)
+
+Con esto nos damos cuentas de las entradas y salidas de nuestro bloque de banco de registro. Las entradas están comprendidas por:
+* datW [3:0] = Nos indica que el registro es de 4 bits
+* addrW [2:0] = Es la dirección de escritura, es de 3 bits porque son 8 registros
+* addrA [2:0] = Dirección para el dato de salida A
+* addrB [2:0] = Dirección para el dato de salida B
+* RegWrite = Señal de control para la escritura
+* clk = Reloj
+* rst= Reset
+
+Y las salidas:
+* datA [3:0] = Dato de salida A
+* datB [3:0] = Dato de salida A
