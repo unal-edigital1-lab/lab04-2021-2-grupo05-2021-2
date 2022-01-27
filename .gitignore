@@ -50,7 +50,7 @@
 *.sopc_builder
 *.summary
 *.tcl
-*.txt # Explicitly add any text files used
+# *.txt # Explicitly add any text files used
 *~
 *example*
 *sopc_*
@@ -61,7 +61,7 @@
 */incremental_db/
 */simulation/
 */timing/
-*/testbench/
+# */testbench/
 */*_sim/
 incremental_db/
 db/

@@ -1,5 +1,5 @@
 Flow report for Bancoreg
-Wed Jan 26 22:35:09 2022
+Thu Jan 27 11:55:58 2022
 Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 
 
@@ -41,18 +41,18 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +------------------------------------+---------------------------------------------+
-; Flow Status                        ; Successful - Wed Jan 26 22:35:09 2022       ;
+; Flow Status                        ; Successful - Thu Jan 27 11:55:58 2022       ;
 ; Quartus Prime Version              ; 20.1.0 Build 711 06/05/2020 SJ Lite Edition ;
 ; Revision Name                      ; Bancoreg                                    ;
-; Top-level Entity Name              ; BancoRegistro                               ;
+; Top-level Entity Name              ; display                                     ;
 ; Family                             ; Cyclone IV E                                ;
 ; Device                             ; EP4CE10E22C8                                ;
 ; Timing Models                      ; Final                                       ;
-; Total logic elements               ; 64 / 10,320 ( < 1 % )                       ;
-;     Total combinational functions  ; 60 / 10,320 ( < 1 % )                       ;
-;     Dedicated logic registers      ; 32 / 10,320 ( < 1 % )                       ;
-; Total registers                    ; 32                                          ;
-; Total pins                         ; 24 / 92 ( 26 % )                            ;
+; Total logic elements               ; 20 / 10,320 ( < 1 % )                       ;
+;     Total combinational functions  ; 20 / 10,320 ( < 1 % )                       ;
+;     Dedicated logic registers      ; 10 / 10,320 ( < 1 % )                       ;
+; Total registers                    ; 10                                          ;
+; Total pins                         ; 37 / 92 ( 40 % )                            ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0 / 423,936 ( 0 % )                         ;
 ; Embedded Multiplier 9-bit elements ; 0 / 46 ( 0 % )                              ;
@@ -65,42 +65,42 @@ https://fpgasoftware.intel.com/eula.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 01/26/2022 22:34:41 ;
+; Start date & time ; 01/27/2022 11:55:32 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; Bancoreg            ;
 +-------------------+---------------------+
 
 
-+---------------------------------------------------------------------------------------------------------------------------------------------------+
-; Flow Non-Default Global Settings                                                                                                                  ;
-+--------------------------------------+----------------------------------------+---------------+---------------+-----------------------------------+
-; Assignment Name                      ; Value                                  ; Default Value ; Entity Name   ; Section Id                        ;
-+--------------------------------------+----------------------------------------+---------------+---------------+-----------------------------------+
-; COMPILER_SIGNATURE_ID                ; 238338864063882.164325448108588        ; --            ; --            ; --                                ;
-; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --            ; testbench                         ;
-; EDA_GENERATE_FUNCTIONAL_NETLIST      ; Off                                    ; --            ; --            ; eda_board_design_timing           ;
-; EDA_GENERATE_FUNCTIONAL_NETLIST      ; Off                                    ; --            ; --            ; eda_board_design_boundary_scan    ;
-; EDA_GENERATE_FUNCTIONAL_NETLIST      ; Off                                    ; --            ; --            ; eda_board_design_signal_integrity ;
-; EDA_GENERATE_FUNCTIONAL_NETLIST      ; Off                                    ; --            ; --            ; eda_board_design_symbol           ;
-; EDA_NATIVELINK_SIMULATION_TEST_BENCH ; testbench                              ; --            ; --            ; eda_simulation                    ;
-; EDA_OUTPUT_DATA_FORMAT               ; Verilog Hdl                            ; --            ; --            ; eda_simulation                    ;
-; EDA_SIMULATION_TOOL                  ; ModelSim-Altera (Verilog)              ; <None>        ; --            ; --                                ;
-; EDA_TEST_BENCH_ENABLE_STATUS         ; TEST_BENCH_MODE                        ; --            ; --            ; eda_simulation                    ;
-; EDA_TEST_BENCH_FILE                  ; src/TestBench.v                        ; --            ; --            ; testbench                         ;
-; EDA_TEST_BENCH_MODULE_NAME           ; testbench                              ; --            ; --            ; testbench                         ;
-; EDA_TEST_BENCH_NAME                  ; testbench                              ; --            ; --            ; eda_simulation                    ;
-; EDA_TIME_SCALE                       ; 1 ps                                   ; --            ; --            ; eda_simulation                    ;
-; MAX_CORE_JUNCTION_TEMP               ; 85                                     ; --            ; --            ; --                                ;
-; MIN_CORE_JUNCTION_TEMP               ; 0                                      ; --            ; --            ; --                                ;
-; NOMINAL_CORE_SUPPLY_VOLTAGE          ; 1.2V                                   ; --            ; --            ; --                                ;
-; PARTITION_COLOR                      ; -- (Not supported for targeted family) ; --            ; BancoRegistro ; Top                               ;
-; PARTITION_FITTER_PRESERVATION_LEVEL  ; -- (Not supported for targeted family) ; --            ; BancoRegistro ; Top                               ;
-; PARTITION_NETLIST_TYPE               ; -- (Not supported for targeted family) ; --            ; BancoRegistro ; Top                               ;
-; POWER_BOARD_THERMAL_MODEL            ; None (CONSERVATIVE)                    ; --            ; --            ; --                                ;
-; POWER_PRESET_COOLING_SOLUTION        ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW  ; --            ; --            ; --                                ;
-; PROJECT_OUTPUT_DIRECTORY             ; output_files                           ; --            ; --            ; --                                ;
-; TOP_LEVEL_ENTITY                     ; BancoRegistro                          ; Bancoreg      ; --            ; --                                ;
-+--------------------------------------+----------------------------------------+---------------+---------------+-----------------------------------+
++-------------------------------------------------------------------------------------------------------------------------------------------------+
+; Flow Non-Default Global Settings                                                                                                                ;
++--------------------------------------+----------------------------------------+---------------+-------------+-----------------------------------+
+; Assignment Name                      ; Value                                  ; Default Value ; Entity Name ; Section Id                        ;
++--------------------------------------+----------------------------------------+---------------+-------------+-----------------------------------+
+; COMPILER_SIGNATURE_ID                ; 238338864063882.164330253108444        ; --            ; --          ; --                                ;
+; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --          ; TB_display                        ;
+; EDA_GENERATE_FUNCTIONAL_NETLIST      ; Off                                    ; --            ; --          ; eda_board_design_timing           ;
+; EDA_GENERATE_FUNCTIONAL_NETLIST      ; Off                                    ; --            ; --          ; eda_board_design_boundary_scan    ;
+; EDA_GENERATE_FUNCTIONAL_NETLIST      ; Off                                    ; --            ; --          ; eda_board_design_signal_integrity ;
+; EDA_GENERATE_FUNCTIONAL_NETLIST      ; Off                                    ; --            ; --          ; eda_board_design_symbol           ;
+; EDA_NATIVELINK_SIMULATION_TEST_BENCH ; TB_display                             ; --            ; --          ; eda_simulation                    ;
+; EDA_OUTPUT_DATA_FORMAT               ; Verilog Hdl                            ; --            ; --          ; eda_simulation                    ;
+; EDA_SIMULATION_TOOL                  ; ModelSim-Altera (Verilog)              ; <None>        ; --          ; --                                ;
+; EDA_TEST_BENCH_ENABLE_STATUS         ; TEST_BENCH_MODE                        ; --            ; --          ; eda_simulation                    ;
+; EDA_TEST_BENCH_FILE                  ; src/TB_display.v                       ; --            ; --          ; TB_display                        ;
+; EDA_TEST_BENCH_MODULE_NAME           ; display                                ; --            ; --          ; TB_display                        ;
+; EDA_TEST_BENCH_NAME                  ; TB_display                             ; --            ; --          ; eda_simulation                    ;
+; EDA_TIME_SCALE                       ; 1 ps                                   ; --            ; --          ; eda_simulation                    ;
+; MAX_CORE_JUNCTION_TEMP               ; 85                                     ; --            ; --          ; --                                ;
+; MIN_CORE_JUNCTION_TEMP               ; 0                                      ; --            ; --          ; --                                ;
+; NOMINAL_CORE_SUPPLY_VOLTAGE          ; 1.2V                                   ; --            ; --          ; --                                ;
+; PARTITION_COLOR                      ; -- (Not supported for targeted family) ; --            ; display     ; Top                               ;
+; PARTITION_FITTER_PRESERVATION_LEVEL  ; -- (Not supported for targeted family) ; --            ; display     ; Top                               ;
+; PARTITION_NETLIST_TYPE               ; -- (Not supported for targeted family) ; --            ; display     ; Top                               ;
+; POWER_BOARD_THERMAL_MODEL            ; None (CONSERVATIVE)                    ; --            ; --          ; --                                ;
+; POWER_PRESET_COOLING_SOLUTION        ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW  ; --            ; --          ; --                                ;
+; PROJECT_OUTPUT_DIRECTORY             ; output_files                           ; --            ; --          ; --                                ;
+; TOP_LEVEL_ENTITY                     ; display                                ; Bancoreg      ; --          ; --                                ;
++--------------------------------------+----------------------------------------+---------------+-------------+-----------------------------------+
 
 
 +--------------------------------------------------------------------------------------------------------------------------+
@@ -108,12 +108,12 @@ https://fpgasoftware.intel.com/eula.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:13     ; 1.0                     ; 4745 MB             ; 00:00:32                           ;
-; Fitter               ; 00:00:04     ; 1.0                     ; 5484 MB             ; 00:00:05                           ;
-; Assembler            ; 00:00:01     ; 1.0                     ; 4676 MB             ; 00:00:01                           ;
-; Timing Analyzer      ; 00:00:02     ; 1.0                     ; 4752 MB             ; 00:00:02                           ;
-; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4636 MB             ; 00:00:01                           ;
-; Total                ; 00:00:21     ; --                      ; --                  ; 00:00:41                           ;
+; Analysis & Synthesis ; 00:00:12     ; 1.0                     ; 4756 MB             ; 00:00:31                           ;
+; Fitter               ; 00:00:06     ; 1.0                     ; 5488 MB             ; 00:00:07                           ;
+; Assembler            ; 00:00:01     ; 1.0                     ; 4677 MB             ; 00:00:01                           ;
+; Timing Analyzer      ; 00:00:02     ; 1.0                     ; 4754 MB             ; 00:00:02                           ;
+; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4637 MB             ; 00:00:01                           ;
+; Total                ; 00:00:22     ; --                      ; --                  ; 00:00:42                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

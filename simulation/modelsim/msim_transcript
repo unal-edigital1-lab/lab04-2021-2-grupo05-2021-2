@@ -10,65 +10,64 @@
 # Copying G:/intelFPGA_lite/20.1/modelsim_ase/win32aloem/../modelsim.ini to modelsim.ini
 # Modifying modelsim.ini
 # 
-# vlog -vlog01compat -work work +incdir+G:/Users/Administrador/Documents/UNAL\ Docs/2021\ -\ II/Electronica\ Digital\ I/Lab/lab04-2021-2-grupo05-2021-2/src {G:/Users/Administrador/Documents/UNAL Docs/2021 - II/Electronica Digital I/Lab/lab04-2021-2-grupo05-2021-2/src/BancoRegistro.v}
+# vlog -vlog01compat -work work +incdir+G:/Users/Administrador/Documents/UNAL\ Docs/2021\ -\ II/Electronica\ Digital\ I/Lab/lab04-2021-2-grupo05-2021-2/src {G:/Users/Administrador/Documents/UNAL Docs/2021 - II/Electronica Digital I/Lab/lab04-2021-2-grupo05-2021-2/src/display.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 22:36:10 on Jan 26,2022
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+G:/Users/Administrador/Documents/UNAL Docs/2021 - II/Electronica Digital I/Lab/lab04-2021-2-grupo05-2021-2/src" G:/Users/Administrador/Documents/UNAL Docs/2021 - II/Electronica Digital I/Lab/lab04-2021-2-grupo05-2021-2/src/BancoRegistro.v 
-# -- Compiling module BancoRegistro
+# Start time: 11:57:39 on Jan 27,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+G:/Users/Administrador/Documents/UNAL Docs/2021 - II/Electronica Digital I/Lab/lab04-2021-2-grupo05-2021-2/src" G:/Users/Administrador/Documents/UNAL Docs/2021 - II/Electronica Digital I/Lab/lab04-2021-2-grupo05-2021-2/src/display.v 
+# -- Compiling module display
 # 
 # Top level modules:
-# 	BancoRegistro
-# End time: 22:36:10 on Jan 26,2022, Elapsed time: 0:00:00
+# 	display
+# End time: 11:57:39 on Jan 27,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
-# 
-# vlog -vlog01compat -work work +incdir+G:/Users/Administrador/Documents/UNAL\ Docs/2021\ -\ II/Electronica\ Digital\ I/Lab/lab04-2021-2-grupo05-2021-2/src {G:/Users/Administrador/Documents/UNAL Docs/2021 - II/Electronica Digital I/Lab/lab04-2021-2-grupo05-2021-2/src/TestBench.v}
+# vlog -vlog01compat -work work +incdir+G:/Users/Administrador/Documents/UNAL\ Docs/2021\ -\ II/Electronica\ Digital\ I/Lab/lab04-2021-2-grupo05-2021-2/src {G:/Users/Administrador/Documents/UNAL Docs/2021 - II/Electronica Digital I/Lab/lab04-2021-2-grupo05-2021-2/src/BCDtoSSeg.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 22:36:10 on Jan 26,2022
-# vlog -reportprogress 300 -vlog01compat -work work "+incdir+G:/Users/Administrador/Documents/UNAL Docs/2021 - II/Electronica Digital I/Lab/lab04-2021-2-grupo05-2021-2/src" G:/Users/Administrador/Documents/UNAL Docs/2021 - II/Electronica Digital I/Lab/lab04-2021-2-grupo05-2021-2/src/TestBench.v 
-# -- Compiling module TestBench
+# Start time: 11:57:39 on Jan 27,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+G:/Users/Administrador/Documents/UNAL Docs/2021 - II/Electronica Digital I/Lab/lab04-2021-2-grupo05-2021-2/src" G:/Users/Administrador/Documents/UNAL Docs/2021 - II/Electronica Digital I/Lab/lab04-2021-2-grupo05-2021-2/src/BCDtoSSeg.v 
+# -- Compiling module BCDtoSSeg
 # 
 # Top level modules:
-# 	TestBench
-# End time: 22:36:10 on Jan 26,2022, Elapsed time: 0:00:00
+# 	BCDtoSSeg
+# End time: 11:57:39 on Jan 27,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
-# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs="+acc"  testbench
-# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs=""+acc"" testbench 
-# Start time: 22:36:10 on Jan 26,2022
-# ** Error: (vsim-3170) Could not find 'testbench'.
-#         Searched libraries:
-#             G:/intelFPGA_lite/20.1/modelsim_ase/altera/verilog/altera
-#             G:/intelFPGA_lite/20.1/modelsim_ase/altera/verilog/220model
-#             G:/intelFPGA_lite/20.1/modelsim_ase/altera/verilog/sgate
-#             G:/intelFPGA_lite/20.1/modelsim_ase/altera/verilog/altera_mf
-#             G:/intelFPGA_lite/20.1/modelsim_ase/altera/verilog/altera_lnsim
-#             G:/intelFPGA_lite/20.1/modelsim_ase/altera/verilog/cycloneive
-#             G:/Users/Administrador/Documents/UNAL Docs/2021 - II/Electronica Digital I/Lab/lab04-2021-2-grupo05-2021-2/simulation/modelsim/rtl_work
-#             G:/Users/Administrador/Documents/UNAL Docs/2021 - II/Electronica Digital I/Lab/lab04-2021-2-grupo05-2021-2/simulation/modelsim/rtl_work
-# Error loading design
-# Error: Error loading design
-#        Pausing macro execution
-# MACRO ./Bancoreg_run_msim_rtl_verilog.do PAUSED at line 12
-vsim work.TestBench
-# vsim work.TestBench 
-# Start time: 22:36:10 on Jan 26,2022
-# Loading work.TestBench
-# Loading work.BancoRegistro
-# ** Warning: (vsim-3015) [PCDPC] - Port size (3) does not match connection size (4) for port 'addrRa'. The port definition is at: G:/Users/Administrador/Documents/UNAL Docs/2021 - II/Electronica Digital I/Lab/lab04-2021-2-grupo05-2021-2/src/BancoRegistro.v(8).
-#    Time: 0 ps  Iteration: 0  Instance: /TestBench/uut File: G:/Users/Administrador/Documents/UNAL Docs/2021 - II/Electronica Digital I/Lab/lab04-2021-2-grupo05-2021-2/src/TestBench.v Line: 20
-# ** Warning: (vsim-3015) [PCDPC] - Port size (3) does not match connection size (4) for port 'addrRb'. The port definition is at: G:/Users/Administrador/Documents/UNAL Docs/2021 - II/Electronica Digital I/Lab/lab04-2021-2-grupo05-2021-2/src/BancoRegistro.v(9).
-#    Time: 0 ps  Iteration: 0  Instance: /TestBench/uut File: G:/Users/Administrador/Documents/UNAL Docs/2021 - II/Electronica Digital I/Lab/lab04-2021-2-grupo05-2021-2/src/TestBench.v Line: 20
-# ** Warning: (vsim-3015) [PCDPC] - Port size (3) does not match connection size (5) for port 'addrW'. The port definition is at: G:/Users/Administrador/Documents/UNAL Docs/2021 - II/Electronica Digital I/Lab/lab04-2021-2-grupo05-2021-2/src/BancoRegistro.v(14).
-#    Time: 0 ps  Iteration: 0  Instance: /TestBench/uut File: G:/Users/Administrador/Documents/UNAL Docs/2021 - II/Electronica Digital I/Lab/lab04-2021-2-grupo05-2021-2/src/TestBench.v Line: 20
-add wave sim:/TestBench/*
+# vlog -vlog01compat -work work +incdir+G:/Users/Administrador/Documents/UNAL\ Docs/2021\ -\ II/Electronica\ Digital\ I/Lab/lab04-2021-2-grupo05-2021-2/src {G:/Users/Administrador/Documents/UNAL Docs/2021 - II/Electronica Digital I/Lab/lab04-2021-2-grupo05-2021-2/src/TB_display.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 11:57:39 on Jan 27,2022
+# vlog -reportprogress 300 -vlog01compat -work work "+incdir+G:/Users/Administrador/Documents/UNAL Docs/2021 - II/Electronica Digital I/Lab/lab04-2021-2-grupo05-2021-2/src" G:/Users/Administrador/Documents/UNAL Docs/2021 - II/Electronica Digital I/Lab/lab04-2021-2-grupo05-2021-2/src/TB_display.v 
+# -- Compiling module TB_display
+# 
+# Top level modules:
+# 	TB_display
+# End time: 11:57:39 on Jan 27,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# 
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs="+acc"  display
+# vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs=""+acc"" display 
+# Start time: 11:57:40 on Jan 27,2022
+# Loading work.display
+# Loading work.BCDtoSSeg
+# 
+# add wave *
+# view structure
+# .main_pane.structure.interior.cs.body.struct
+# view signals
+# .main_pane.objects.interior.cs.body.tree
+# run -all
 run
-# regA[ 0] = 15 y regB[ 7] = 15
-# regA[ 1] = 15 y regB[ 6] =  8
-# regA[ 2] = 14 y regB[ 5] =  9
-# regA[ 3] = 13 y regB[ 4] = 10
-# regA[ 0] = 15 y regB[ 7] = 15
-# regA[ 1] = 15 y regB[ 6] =  8
-# regA[ 2] = 15 y regB[ 5] = 15
-# regA[ 3] = 15 y regB[ 4] = 15
-# End time: 22:39:33 on Jan 26,2022, Elapsed time: 0:03:23
-# Errors: 1, Warnings: 3
+restart
+run
+vsim work.TB_display
+# End time: 12:06:32 on Jan 27,2022, Elapsed time: 0:08:52
+# Errors: 0, Warnings: 0
+# vsim work.TB_display 
+# Start time: 12:06:32 on Jan 27,2022
+# Loading work.TB_display
+# Loading work.display
+# Loading work.BCDtoSSeg
+add wave sim:/TB_display/*
+run
+restart
+run
+# End time: 12:17:18 on Jan 27,2022, Elapsed time: 0:10:46
+# Errors: 0, Warnings: 0

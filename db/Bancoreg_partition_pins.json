@@ -4,67 +4,63 @@
 			"name" : "Top",
 			"pins" : [
 				{
-					"name" : "datOutRa[0]",
+					"name" : "sseg[6]",
 					"strict" : false
 				},
 				{
-					"name" : "datOutRa[1]",
+					"name" : "sseg[5]",
 					"strict" : false
 				},
 				{
-					"name" : "datOutRa[2]",
+					"name" : "sseg[4]",
 					"strict" : false
 				},
 				{
-					"name" : "datOutRa[3]",
+					"name" : "sseg[3]",
 					"strict" : false
 				},
 				{
-					"name" : "datOutRb[0]",
+					"name" : "sseg[2]",
 					"strict" : false
 				},
 				{
-					"name" : "datOutRb[1]",
+					"name" : "sseg[1]",
 					"strict" : false
 				},
 				{
-					"name" : "datOutRb[2]",
+					"name" : "sseg[0]",
 					"strict" : false
 				},
 				{
-					"name" : "datOutRb[3]",
+					"name" : "an[0]",
 					"strict" : false
 				},
 				{
-					"name" : "addrRa[0]",
+					"name" : "an[1]",
 					"strict" : false
 				},
 				{
-					"name" : "addrRa[1]",
+					"name" : "an[2]",
 					"strict" : false
 				},
 				{
-					"name" : "addrRa[2]",
+					"name" : "an[3]",
 					"strict" : false
 				},
 				{
-					"name" : "addrRb[0]",
+					"name" : "addRa[0]",
 					"strict" : false
 				},
 				{
-					"name" : "addrRb[1]",
+					"name" : "datoRB[0]",
 					"strict" : false
 				},
 				{
-					"name" : "addrRb[2]",
+					"name" : "datoRA[0]",
 					"strict" : false
 				},
 				{
-					"name" : "datW[0]",
-					"strict" : false
-				},
-				{
-					"name" : "rst",
+					"name" : "addRb[0]",
 					"strict" : false
 				},
 				{
@@ -72,31 +68,47 @@
 					"strict" : false
 				},
 				{
-					"name" : "addrW[0]",
+					"name" : "rst",
 					"strict" : false
 				},
 				{
-					"name" : "addrW[1]",
+					"name" : "addRa[1]",
 					"strict" : false
 				},
 				{
-					"name" : "addrW[2]",
+					"name" : "datoRB[1]",
 					"strict" : false
 				},
 				{
-					"name" : "RegWrite",
+					"name" : "datoRA[1]",
 					"strict" : false
 				},
 				{
-					"name" : "datW[1]",
+					"name" : "addRb[1]",
 					"strict" : false
 				},
 				{
-					"name" : "datW[2]",
+					"name" : "datoRB[2]",
 					"strict" : false
 				},
 				{
-					"name" : "datW[3]",
+					"name" : "addRa[2]",
+					"strict" : false
+				},
+				{
+					"name" : "datoRA[2]",
+					"strict" : false
+				},
+				{
+					"name" : "addRb[2]",
+					"strict" : false
+				},
+				{
+					"name" : "datoRB[3]",
+					"strict" : false
+				},
+				{
+					"name" : "datoRA[3]",
 					"strict" : false
 				}
 			]
