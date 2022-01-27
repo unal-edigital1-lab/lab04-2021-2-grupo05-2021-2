@@ -1,13 +1,13 @@
-Analysis & Synthesis Status : Successful - Thu Jan 27 11:55:43 2022
+Analysis & Synthesis Status : Successful - Thu Jan 27 13:30:13 2022
 Quartus Prime Version : 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 Revision Name : Bancoreg
-Top-level Entity Name : display
+Top-level Entity Name : Bancoreg
 Family : Cyclone IV E
-Total logic elements : 20
-    Total combinational functions : 20
-    Dedicated logic registers : 10
-Total registers : 10
-Total pins : 37
+Total logic elements : 93
+    Total combinational functions : 65
+    Dedicated logic registers : 42
+Total registers : 42
+Total pins : 27
 Total virtual pins : 0
 Total memory bits : 0
 Embedded Multiplier 9-bit elements : 0

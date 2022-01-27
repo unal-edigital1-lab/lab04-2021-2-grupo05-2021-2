@@ -48,19 +48,27 @@
 					"strict" : false
 				},
 				{
-					"name" : "addRa[0]",
+					"name" : "addrRb[0]",
 					"strict" : false
 				},
 				{
-					"name" : "datoRB[0]",
+					"name" : "addrRa[0]",
 					"strict" : false
 				},
 				{
-					"name" : "datoRA[0]",
+					"name" : "addrRb[1]",
 					"strict" : false
 				},
 				{
-					"name" : "addRb[0]",
+					"name" : "addrRa[1]",
+					"strict" : false
+				},
+				{
+					"name" : "addrRb[2]",
+					"strict" : false
+				},
+				{
+					"name" : "addrRa[2]",
 					"strict" : false
 				},
 				{
@@ -72,43 +80,35 @@
 					"strict" : false
 				},
 				{
-					"name" : "addRa[1]",
+					"name" : "datW[0]",
 					"strict" : false
 				},
 				{
-					"name" : "datoRB[1]",
+					"name" : "addrW[0]",
 					"strict" : false
 				},
 				{
-					"name" : "datoRA[1]",
+					"name" : "addrW[1]",
 					"strict" : false
 				},
 				{
-					"name" : "addRb[1]",
+					"name" : "addrW[2]",
 					"strict" : false
 				},
 				{
-					"name" : "datoRB[2]",
+					"name" : "RegWrite",
 					"strict" : false
 				},
 				{
-					"name" : "addRa[2]",
+					"name" : "datW[1]",
 					"strict" : false
 				},
 				{
-					"name" : "datoRA[2]",
+					"name" : "datW[2]",
 					"strict" : false
 				},
 				{
-					"name" : "addRb[2]",
-					"strict" : false
-				},
-				{
-					"name" : "datoRB[3]",
-					"strict" : false
-				},
-				{
-					"name" : "datoRA[3]",
+					"name" : "datW[3]",
 					"strict" : false
 				}
 			]

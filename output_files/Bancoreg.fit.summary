@@ -1,15 +1,15 @@
-Fitter Status : Successful - Thu Jan 27 11:55:51 2022
+Fitter Status : Successful - Thu Jan 27 13:30:18 2022
 Quartus Prime Version : 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 Revision Name : Bancoreg
-Top-level Entity Name : display
+Top-level Entity Name : Bancoreg
 Family : Cyclone IV E
 Device : EP4CE10E22C8
 Timing Models : Final
-Total logic elements : 20 / 10,320 ( < 1 % )
-    Total combinational functions : 20 / 10,320 ( < 1 % )
-    Dedicated logic registers : 10 / 10,320 ( < 1 % )
-Total registers : 10
-Total pins : 37 / 92 ( 40 % )
+Total logic elements : 80 / 10,320 ( < 1 % )
+    Total combinational functions : 65 / 10,320 ( < 1 % )
+    Dedicated logic registers : 42 / 10,320 ( < 1 % )
+Total registers : 42
+Total pins : 27 / 92 ( 29 % )
 Total virtual pins : 0
 Total memory bits : 0 / 423,936 ( 0 % )
 Embedded Multiplier 9-bit elements : 0 / 46 ( 0 % )

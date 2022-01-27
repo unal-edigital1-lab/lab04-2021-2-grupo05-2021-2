@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Bancoreg
-Thu Jan 27 11:55:44 2022
+Thu Jan 27 13:30:13 2022
 Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 
 
@@ -13,12 +13,13 @@ Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
   5. Analysis & Synthesis Source Files Read
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
-  8. Registers Removed During Synthesis
-  9. General Register Statistics
- 10. Multiplexer Restructuring Statistics (Restructuring Performed)
- 11. Post-Synthesis Netlist Statistics for Top Partition
- 12. Elapsed Time Per Partition
- 13. Analysis & Synthesis Messages
+  8. General Register Statistics
+  9. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 10. Parameter Settings for User Entity Instance: BancoRegistro:bancoRegistro
+ 11. Port Connectivity Checks: "display:disp"
+ 12. Post-Synthesis Netlist Statistics for Top Partition
+ 13. Elapsed Time Per Partition
+ 14. Analysis & Synthesis Messages
 
 
 
@@ -45,16 +46,16 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Thu Jan 27 11:55:43 2022       ;
+; Analysis & Synthesis Status        ; Successful - Thu Jan 27 13:30:13 2022       ;
 ; Quartus Prime Version              ; 20.1.0 Build 711 06/05/2020 SJ Lite Edition ;
 ; Revision Name                      ; Bancoreg                                    ;
-; Top-level Entity Name              ; display                                     ;
+; Top-level Entity Name              ; Bancoreg                                    ;
 ; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; 20                                          ;
-;     Total combinational functions  ; 20                                          ;
-;     Dedicated logic registers      ; 10                                          ;
-; Total registers                    ; 10                                          ;
-; Total pins                         ; 37                                          ;
+; Total logic elements               ; 93                                          ;
+;     Total combinational functions  ; 65                                          ;
+;     Dedicated logic registers      ; 42                                          ;
+; Total registers                    ; 42                                          ;
+; Total pins                         ; 27                                          ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0                                           ;
 ; Embedded Multiplier 9-bit elements ; 0                                           ;
@@ -68,7 +69,7 @@ https://fpgasoftware.intel.com/eula.
 ; Option                                                           ; Setting            ; Default Value      ;
 +------------------------------------------------------------------+--------------------+--------------------+
 ; Device                                                           ; EP4CE10E22C8       ;                    ;
-; Top-level entity name                                            ; display            ; Bancoreg           ;
+; Top-level entity name                                            ; Bancoreg           ; Bancoreg           ;
 ; Family name                                                      ; Cyclone IV E       ; Cyclone V          ;
 ; Use smart compilation                                            ; Off                ; Off                ;
 ; Enable parallel Assembler and Timing Analyzer during compilation ; On                 ; On                 ;
@@ -165,68 +166,61 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 
 
-+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                                                             ;
-+----------------------------------+-----------------+------------------------+----------------------------------------------------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type              ; File Name with Absolute Path                                                                                               ; Library ;
-+----------------------------------+-----------------+------------------------+----------------------------------------------------------------------------------------------------------------------------+---------+
-; src/display.v                    ; yes             ; User Verilog HDL File  ; G:/Users/Administrador/Documents/UNAL Docs/2021 - II/Electronica Digital I/Lab/lab04-2021-2-grupo05-2021-2/src/display.v   ;         ;
-; src/BCDtoSSeg.v                  ; yes             ; User Verilog HDL File  ; G:/Users/Administrador/Documents/UNAL Docs/2021 - II/Electronica Digital I/Lab/lab04-2021-2-grupo05-2021-2/src/BCDtoSSeg.v ;         ;
-+----------------------------------+-----------------+------------------------+----------------------------------------------------------------------------------------------------------------------------+---------+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                                                                                                ;
++-----------------------------------+-----------------+------------------------+----------------------------------------------------------------------------------------------------------------------------------------------+---------+
+; File Name with User-Entered Path  ; Used in Netlist ; File Type              ; File Name with Absolute Path                                                                                                                 ; Library ;
++-----------------------------------+-----------------+------------------------+----------------------------------------------------------------------------------------------------------------------------------------------+---------+
+; src/display/display.v             ; yes             ; User Verilog HDL File  ; G:/Users/Administrador/Documents/UNAL Docs/2021 - II/Electronica Digital I/Lab/lab04-2021-2-grupo05-2021-2/src/display/display.v             ;         ;
+; src/display/BCDtoSSeg.v           ; yes             ; User Verilog HDL File  ; G:/Users/Administrador/Documents/UNAL Docs/2021 - II/Electronica Digital I/Lab/lab04-2021-2-grupo05-2021-2/src/display/BCDtoSSeg.v           ;         ;
+; src/bancoRegistro/BancoRegistro.v ; yes             ; User Verilog HDL File  ; G:/Users/Administrador/Documents/UNAL Docs/2021 - II/Electronica Digital I/Lab/lab04-2021-2-grupo05-2021-2/src/bancoRegistro/BancoRegistro.v ;         ;
+; Bancoreg.v                        ; yes             ; User Verilog HDL File  ; G:/Users/Administrador/Documents/UNAL Docs/2021 - II/Electronica Digital I/Lab/lab04-2021-2-grupo05-2021-2/Bancoreg.v                        ;         ;
++-----------------------------------+-----------------+------------------------+----------------------------------------------------------------------------------------------------------------------------------------------+---------+
 
 
-+--------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary            ;
-+---------------------------------------------+----------+
-; Resource                                    ; Usage    ;
-+---------------------------------------------+----------+
-; Estimated Total logic elements              ; 20       ;
-;                                             ;          ;
-; Total combinational functions               ; 20       ;
-; Logic element usage by number of LUT inputs ;          ;
-;     -- 4 input functions                    ; 14       ;
-;     -- 3 input functions                    ; 5        ;
-;     -- <=2 input functions                  ; 1        ;
-;                                             ;          ;
-; Logic elements by mode                      ;          ;
-;     -- normal mode                          ; 20       ;
-;     -- arithmetic mode                      ; 0        ;
-;                                             ;          ;
-; Total registers                             ; 10       ;
-;     -- Dedicated logic registers            ; 10       ;
-;     -- I/O registers                        ; 0        ;
-;                                             ;          ;
-; I/O pins                                    ; 37       ;
-;                                             ;          ;
-; Embedded Multiplier 9-bit elements          ; 0        ;
-;                                             ;          ;
-; Maximum fan-out node                        ; count[1] ;
-; Maximum fan-out                             ; 11       ;
-; Total fan-out                               ; 145      ;
-; Average fan-out                             ; 1.39     ;
-+---------------------------------------------+----------+
++---------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary             ;
++---------------------------------------------+-----------+
+; Resource                                    ; Usage     ;
++---------------------------------------------+-----------+
+; Estimated Total logic elements              ; 93        ;
+;                                             ;           ;
+; Total combinational functions               ; 65        ;
+; Logic element usage by number of LUT inputs ;           ;
+;     -- 4 input functions                    ; 44        ;
+;     -- 3 input functions                    ; 2         ;
+;     -- <=2 input functions                  ; 19        ;
+;                                             ;           ;
+; Logic elements by mode                      ;           ;
+;     -- normal mode                          ; 65        ;
+;     -- arithmetic mode                      ; 0         ;
+;                                             ;           ;
+; Total registers                             ; 42        ;
+;     -- Dedicated logic registers            ; 42        ;
+;     -- I/O registers                        ; 0         ;
+;                                             ;           ;
+; I/O pins                                    ; 27        ;
+;                                             ;           ;
+; Embedded Multiplier 9-bit elements          ; 0         ;
+;                                             ;           ;
+; Maximum fan-out node                        ; clk~input ;
+; Maximum fan-out                             ; 42        ;
+; Total fan-out                               ; 383       ;
+; Average fan-out                             ; 2.38      ;
++---------------------------------------------+-----------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                               ;
-+----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+------------------------------+-------------+--------------+
-; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name          ; Entity Name ; Library Name ;
-+----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+------------------------------+-------------+--------------+
-; |display                   ; 20 (13)             ; 10 (10)                   ; 0           ; 0            ; 0       ; 0         ; 37   ; 0            ; |display                     ; display     ; work         ;
-;    |BCDtoSSeg:bcdtosseg|   ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |display|BCDtoSSeg:bcdtosseg ; BCDtoSSeg   ; work         ;
-+----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+------------------------------+-------------+--------------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                                     ;
++----------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------+---------------+--------------+
+; Compilation Hierarchy Node       ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                        ; Entity Name   ; Library Name ;
++----------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------+---------------+--------------+
+; |Bancoreg                        ; 65 (0)              ; 42 (0)                    ; 0           ; 0            ; 0       ; 0         ; 27   ; 0            ; |Bancoreg                                  ; Bancoreg      ; work         ;
+;    |BancoRegistro:bancoRegistro| ; 28 (28)             ; 32 (32)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Bancoreg|BancoRegistro:bancoRegistro      ; BancoRegistro ; work         ;
+;    |display:disp|                ; 37 (30)             ; 10 (10)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Bancoreg|display:disp                     ; display       ; work         ;
+;       |BCDtoSSeg:bcdtosseg|      ; 7 (7)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Bancoreg|display:disp|BCDtoSSeg:bcdtosseg ; BCDtoSSeg     ; work         ;
++----------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+--------------------------------------------+---------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
-
-
-+--------------------------------------------------------------------------------+
-; Registers Removed During Synthesis                                             ;
-+---------------------------------------+----------------------------------------+
-; Register name                         ; Reason for Removal                     ;
-+---------------------------------------+----------------------------------------+
-; an[4]~reg0                            ; Stuck at VCC due to stuck port data_in ;
-; an[5]~reg0                            ; Stuck at VCC due to stuck port data_in ;
-; Total Number of Removed Registers = 2 ;                                        ;
-+---------------------------------------+----------------------------------------+
 
 
 +------------------------------------------------------+
@@ -234,23 +228,51 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 10    ;
-; Number of registers using Synchronous Clear  ; 0     ;
-; Number of registers using Synchronous Load   ; 0     ;
+; Total registers                              ; 42    ;
+; Number of registers using Synchronous Clear  ; 1     ;
+; Number of registers using Synchronous Load   ; 4     ;
 ; Number of registers using Asynchronous Clear ; 0     ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 4     ;
+; Number of registers using Clock Enable       ; 36    ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------+
-; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                           ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
-; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
-; 4:1                ; 3 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; Yes        ; |display|bcd[2]            ;
-+--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
++----------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                                                 ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output                       ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------------+
+; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |Bancoreg|BancoRegistro:bancoRegistro|breg[6][3] ;
+; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |Bancoreg|BancoRegistro:bancoRegistro|breg[5][3] ;
+; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |Bancoreg|BancoRegistro:bancoRegistro|breg[4][2] ;
+; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |Bancoreg|BancoRegistro:bancoRegistro|breg[3][2] ;
+; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |Bancoreg|BancoRegistro:bancoRegistro|breg[2][2] ;
+; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |Bancoreg|BancoRegistro:bancoRegistro|breg[1][2] ;
+; 3:1                ; 4 bits    ; 8 LEs         ; 4 LEs                ; 4 LEs                  ; Yes        ; |Bancoreg|BancoRegistro:bancoRegistro|breg[0][2] ;
+; 18:1               ; 3 bits    ; 36 LEs        ; 18 LEs               ; 18 LEs                 ; Yes        ; |Bancoreg|display:disp|bcd[2]                    ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+--------------------------------------------------+
+
+
++--------------------------------------------------------------------------+
+; Parameter Settings for User Entity Instance: BancoRegistro:bancoRegistro ;
++----------------+-------+-------------------------------------------------+
+; Parameter Name ; Value ; Type                                            ;
++----------------+-------+-------------------------------------------------+
+; BIT_ADDR       ; 3     ; Signed Integer                                  ;
+; BIT_DATO       ; 4     ; Signed Integer                                  ;
++----------------+-------+-------------------------------------------------+
+Note: In order to hide this table in the UI and the text report file, please set the "Show Parameter Settings in Synthesis Report" option in "Analysis and Synthesis Settings -> More Settings" to "Off".
+
+
++--------------------------------------------------------------------------------------------------------------------------------------------------+
+; Port Connectivity Checks: "display:disp"                                                                                                         ;
++------+--------+----------+-----------------------------------------------------------------------------------------------------------------------+
+; Port ; Type   ; Severity ; Details                                                                                                               ;
++------+--------+----------+-----------------------------------------------------------------------------------------------------------------------+
+; an   ; Output ; Warning  ; Output or bidir port (6 bits) is wider than the port expression (4 bits) it drives; bit(s) "an[5..4]" have no fanouts ;
+; led  ; Output ; Warning  ; Declared by entity but not connected by instance. Logic that only feeds a dangling port will be removed.              ;
++------+--------+----------+-----------------------------------------------------------------------------------------------------------------------+
 
 
 +-----------------------------------------------------+
@@ -258,20 +280,21 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; boundary_port         ; 37                          ;
-; cycloneiii_ff         ; 10                          ;
-;     ENA               ; 4                           ;
-;     plain             ; 6                           ;
-; cycloneiii_lcell_comb ; 23                          ;
-;     normal            ; 23                          ;
-;         0 data inputs ; 2                           ;
+; boundary_port         ; 27                          ;
+; cycloneiii_ff         ; 42                          ;
+;     ENA               ; 36                          ;
+;     SCLR              ; 1                           ;
+;     SLD               ; 4                           ;
+;     plain             ; 1                           ;
+; cycloneiii_lcell_comb ; 66                          ;
+;     normal            ; 66                          ;
 ;         1 data inputs ; 1                           ;
-;         2 data inputs ; 1                           ;
-;         3 data inputs ; 5                           ;
-;         4 data inputs ; 14                          ;
+;         2 data inputs ; 19                          ;
+;         3 data inputs ; 2                           ;
+;         4 data inputs ; 44                          ;
 ;                       ;                             ;
-; Max LUT depth         ; 2.00                        ;
-; Average LUT depth     ; 1.27                        ;
+; Max LUT depth         ; 5.00                        ;
+; Average LUT depth     ; 2.98                        ;
 +-----------------------+-----------------------------+
 
 
@@ -290,51 +313,42 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
-    Info: Processing started: Thu Jan 27 11:55:31 2022
+    Info: Processing started: Thu Jan 27 13:30:02 2022
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Bancoreg -c Bancoreg
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
-Info (12021): Found 1 design units, including 1 entities, in source file src/tb_display.v
-    Info (12023): Found entity 1: TB_display File: G:/Users/Administrador/Documents/UNAL Docs/2021 - II/Electronica Digital I/Lab/lab04-2021-2-grupo05-2021-2/src/TB_display.v Line: 3
-Warning (10229): Verilog HDL Expression warning at display.v(38): truncated literal to match 2 bits File: G:/Users/Administrador/Documents/UNAL Docs/2021 - II/Electronica Digital I/Lab/lab04-2021-2-grupo05-2021-2/src/display.v Line: 38
-Warning (10229): Verilog HDL Expression warning at display.v(39): truncated literal to match 2 bits File: G:/Users/Administrador/Documents/UNAL Docs/2021 - II/Electronica Digital I/Lab/lab04-2021-2-grupo05-2021-2/src/display.v Line: 39
-Info (12021): Found 1 design units, including 1 entities, in source file src/display.v
-    Info (12023): Found entity 1: display File: G:/Users/Administrador/Documents/UNAL Docs/2021 - II/Electronica Digital I/Lab/lab04-2021-2-grupo05-2021-2/src/display.v Line: 3
-Info (12021): Found 1 design units, including 1 entities, in source file src/bcdtosseg.v
-    Info (12023): Found entity 1: BCDtoSSeg File: G:/Users/Administrador/Documents/UNAL Docs/2021 - II/Electronica Digital I/Lab/lab04-2021-2-grupo05-2021-2/src/BCDtoSSeg.v Line: 1
-Info (12021): Found 1 design units, including 1 entities, in source file src/bancoregistro.v
-    Info (12023): Found entity 1: BancoRegistro File: G:/Users/Administrador/Documents/UNAL Docs/2021 - II/Electronica Digital I/Lab/lab04-2021-2-grupo05-2021-2/src/BancoRegistro.v Line: 3
+Warning (10229): Verilog HDL Expression warning at display.v(38): truncated literal to match 2 bits File: G:/Users/Administrador/Documents/UNAL Docs/2021 - II/Electronica Digital I/Lab/lab04-2021-2-grupo05-2021-2/src/display/display.v Line: 38
+Warning (10229): Verilog HDL Expression warning at display.v(39): truncated literal to match 2 bits File: G:/Users/Administrador/Documents/UNAL Docs/2021 - II/Electronica Digital I/Lab/lab04-2021-2-grupo05-2021-2/src/display/display.v Line: 39
+Info (12021): Found 1 design units, including 1 entities, in source file src/display/display.v
+    Info (12023): Found entity 1: display File: G:/Users/Administrador/Documents/UNAL Docs/2021 - II/Electronica Digital I/Lab/lab04-2021-2-grupo05-2021-2/src/display/display.v Line: 3
+Info (12021): Found 1 design units, including 1 entities, in source file src/display/bcdtosseg.v
+    Info (12023): Found entity 1: BCDtoSSeg File: G:/Users/Administrador/Documents/UNAL Docs/2021 - II/Electronica Digital I/Lab/lab04-2021-2-grupo05-2021-2/src/display/BCDtoSSeg.v Line: 1
+Info (12021): Found 1 design units, including 1 entities, in source file src/bancoregistro/bancoregistro.v
+    Info (12023): Found entity 1: BancoRegistro File: G:/Users/Administrador/Documents/UNAL Docs/2021 - II/Electronica Digital I/Lab/lab04-2021-2-grupo05-2021-2/src/bancoRegistro/BancoRegistro.v Line: 3
+Info (12021): Found 1 design units, including 1 entities, in source file tb_bancoreg.v
+    Info (12023): Found entity 1: TB_bancoreg File: G:/Users/Administrador/Documents/UNAL Docs/2021 - II/Electronica Digital I/Lab/lab04-2021-2-grupo05-2021-2/TB_bancoreg.v Line: 3
 Info (12021): Found 1 design units, including 1 entities, in source file bancoreg.v
-    Info (12023): Found entity 1: Bancoreg File: G:/Users/Administrador/Documents/UNAL Docs/2021 - II/Electronica Digital I/Lab/lab04-2021-2-grupo05-2021-2/Bancoreg.v Line: 3
-Info (12127): Elaborating entity "display" for the top level hierarchy
-Warning (10230): Verilog HDL assignment warning at display.v(31): truncated value with size 32 to match size of target (2) File: G:/Users/Administrador/Documents/UNAL Docs/2021 - II/Electronica Digital I/Lab/lab04-2021-2-grupo05-2021-2/src/display.v Line: 31
-Warning (10272): Verilog HDL Case Statement warning at display.v(38): case item expression covers a value already covered by a previous case item File: G:/Users/Administrador/Documents/UNAL Docs/2021 - II/Electronica Digital I/Lab/lab04-2021-2-grupo05-2021-2/src/display.v Line: 38
-Warning (10272): Verilog HDL Case Statement warning at display.v(39): case item expression covers a value already covered by a previous case item File: G:/Users/Administrador/Documents/UNAL Docs/2021 - II/Electronica Digital I/Lab/lab04-2021-2-grupo05-2021-2/src/display.v Line: 39
-Warning (10034): Output port "led" at display.v(15) has no driver File: G:/Users/Administrador/Documents/UNAL Docs/2021 - II/Electronica Digital I/Lab/lab04-2021-2-grupo05-2021-2/src/display.v Line: 15
-Info (12128): Elaborating entity "BCDtoSSeg" for hierarchy "BCDtoSSeg:bcdtosseg" File: G:/Users/Administrador/Documents/UNAL Docs/2021 - II/Electronica Digital I/Lab/lab04-2021-2-grupo05-2021-2/src/display.v Line: 19
-Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "an[4]" is stuck at VCC File: G:/Users/Administrador/Documents/UNAL Docs/2021 - II/Electronica Digital I/Lab/lab04-2021-2-grupo05-2021-2/src/display.v Line: 23
-    Warning (13410): Pin "an[5]" is stuck at VCC File: G:/Users/Administrador/Documents/UNAL Docs/2021 - II/Electronica Digital I/Lab/lab04-2021-2-grupo05-2021-2/src/display.v Line: 23
-    Warning (13410): Pin "led" is stuck at GND File: G:/Users/Administrador/Documents/UNAL Docs/2021 - II/Electronica Digital I/Lab/lab04-2021-2-grupo05-2021-2/src/display.v Line: 15
+    Info (12023): Found entity 1: Bancoreg File: G:/Users/Administrador/Documents/UNAL Docs/2021 - II/Electronica Digital I/Lab/lab04-2021-2-grupo05-2021-2/Bancoreg.v Line: 7
+Info (12127): Elaborating entity "Bancoreg" for the top level hierarchy
+Info (12128): Elaborating entity "BancoRegistro" for hierarchy "BancoRegistro:bancoRegistro" File: G:/Users/Administrador/Documents/UNAL Docs/2021 - II/Electronica Digital I/Lab/lab04-2021-2-grupo05-2021-2/Bancoreg.v Line: 26
+Info (12128): Elaborating entity "display" for hierarchy "display:disp" File: G:/Users/Administrador/Documents/UNAL Docs/2021 - II/Electronica Digital I/Lab/lab04-2021-2-grupo05-2021-2/Bancoreg.v Line: 30
+Warning (10230): Verilog HDL assignment warning at display.v(31): truncated value with size 32 to match size of target (2) File: G:/Users/Administrador/Documents/UNAL Docs/2021 - II/Electronica Digital I/Lab/lab04-2021-2-grupo05-2021-2/src/display/display.v Line: 31
+Warning (10272): Verilog HDL Case Statement warning at display.v(38): case item expression covers a value already covered by a previous case item File: G:/Users/Administrador/Documents/UNAL Docs/2021 - II/Electronica Digital I/Lab/lab04-2021-2-grupo05-2021-2/src/display/display.v Line: 38
+Warning (10272): Verilog HDL Case Statement warning at display.v(39): case item expression covers a value already covered by a previous case item File: G:/Users/Administrador/Documents/UNAL Docs/2021 - II/Electronica Digital I/Lab/lab04-2021-2-grupo05-2021-2/src/display/display.v Line: 39
+Warning (10034): Output port "led" at display.v(15) has no driver File: G:/Users/Administrador/Documents/UNAL Docs/2021 - II/Electronica Digital I/Lab/lab04-2021-2-grupo05-2021-2/src/display/display.v Line: 15
+Info (12128): Elaborating entity "BCDtoSSeg" for hierarchy "display:disp|BCDtoSSeg:bcdtosseg" File: G:/Users/Administrador/Documents/UNAL Docs/2021 - II/Electronica Digital I/Lab/lab04-2021-2-grupo05-2021-2/src/display/display.v Line: 19
+Warning (12241): 1 hierarchies have connectivity warnings - see the Connectivity Checks report folder
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Warning (21074): Design contains 7 input pin(s) that do not drive logic
-    Warning (15610): No output dependent on input pin "addrW[0]" File: G:/Users/Administrador/Documents/UNAL Docs/2021 - II/Electronica Digital I/Lab/lab04-2021-2-grupo05-2021-2/src/display.v Line: 8
-    Warning (15610): No output dependent on input pin "addrW[1]" File: G:/Users/Administrador/Documents/UNAL Docs/2021 - II/Electronica Digital I/Lab/lab04-2021-2-grupo05-2021-2/src/display.v Line: 8
-    Warning (15610): No output dependent on input pin "addrW[2]" File: G:/Users/Administrador/Documents/UNAL Docs/2021 - II/Electronica Digital I/Lab/lab04-2021-2-grupo05-2021-2/src/display.v Line: 8
-    Warning (15610): No output dependent on input pin "datW[0]" File: G:/Users/Administrador/Documents/UNAL Docs/2021 - II/Electronica Digital I/Lab/lab04-2021-2-grupo05-2021-2/src/display.v Line: 9
-    Warning (15610): No output dependent on input pin "datW[1]" File: G:/Users/Administrador/Documents/UNAL Docs/2021 - II/Electronica Digital I/Lab/lab04-2021-2-grupo05-2021-2/src/display.v Line: 9
-    Warning (15610): No output dependent on input pin "datW[2]" File: G:/Users/Administrador/Documents/UNAL Docs/2021 - II/Electronica Digital I/Lab/lab04-2021-2-grupo05-2021-2/src/display.v Line: 9
-    Warning (15610): No output dependent on input pin "datW[3]" File: G:/Users/Administrador/Documents/UNAL Docs/2021 - II/Electronica Digital I/Lab/lab04-2021-2-grupo05-2021-2/src/display.v Line: 9
-Info (21057): Implemented 57 device resources after synthesis - the final resource count might be different
-    Info (21058): Implemented 23 input pins
-    Info (21059): Implemented 14 output pins
-    Info (21061): Implemented 20 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 19 warnings
-    Info: Peak virtual memory: 4756 megabytes
-    Info: Processing ended: Thu Jan 27 11:55:44 2022
-    Info: Elapsed time: 00:00:13
-    Info: Total CPU time (on all processors): 00:00:31
+Info (21057): Implemented 126 device resources after synthesis - the final resource count might be different
+    Info (21058): Implemented 16 input pins
+    Info (21059): Implemented 11 output pins
+    Info (21061): Implemented 99 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 8 warnings
+    Info: Peak virtual memory: 4759 megabytes
+    Info: Processing ended: Thu Jan 27 13:30:13 2022
+    Info: Elapsed time: 00:00:11
+    Info: Total CPU time (on all processors): 00:00:26
 
 
