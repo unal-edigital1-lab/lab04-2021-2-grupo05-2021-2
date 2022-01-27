@@ -18,15 +18,15 @@ module TestBench;
 
 	// Instantiate the Unit Under Test (UUT)
 	BancoRegistro uut (
-		.addrRa(addrRa), 
-		.addrRb(addrRb), 
-		.datOutRa(datOutRa), 
-		.datOutRb(datOutRb), 
-		.addrW(addrW), 
-		.datW(datW), 
-		.RegWrite(RegWrite), 
-		.clk(clk), 
-		.rst(rst)
+		addrRa,
+		addrRb,
+		datOutRa,
+		datOutRb,
+		addrW,
+		datW,
+		RegWrite,
+		clk,
+		rst
 	);
 
 	initial begin
@@ -44,47 +44,39 @@ module TestBench;
 		
 		// writting 8 registers
 		for (addrW = 0; addrW < 8; addrW = addrW + 1) begin
-			datW = 15 - addrW; // 15 14 13 12 11 10 9 8
-			#5; // wait 5 ns
+			datW = 15 - addrW;
+			#5;
 		end
 		
-		//RegWrite = 0;
+		RegWrite = 0; // Disable register writting
+		
 		// 4 register lecture - 2 simultaneous
-		// 0 1 6 7
 		for (addrRa = 0; addrRa < 4; addrRa = addrRa + 1) begin
 				addrRb = 7 - addrRa;
 				$display("regA[%d] = %d y regB[%d] = %d", 
 						addrRa, datOutRa, addrRb, datOutRb);
-				#5; // wait 5 ns to see changes
+						
+				#5; // wait 5 ns to easily see changes
 		end
 		
-		#280
+		RegWrite = 1;
+		rst = 1; // Reset all registers to default value
+		#10 //wait for register default value asignment
+		
+		rst = 0;
+		RegWrite = 0;
+		
+		// Read all registers again, to see the change to default value
 		for (addrRa = 0; addrRa < 4; addrRa = addrRa + 1) begin
 				addrRb = 7 - addrRa;
 				$display("regA[%d] = %d y regB[%d] = %d", 
 						addrRa, datOutRa, addrRb, datOutRb);
-				#5; // wait 5 ns to see changes
+						
+				#5; // wait 5 ns to easily see changes
 		end
-      /**
-		for (addrRa = 0; addrRa < 8; addrRa = addrRa + 1) begin
-			#5 addrRb = addrRa + 8;
-			 $display("el valor del registro %d =  %d y %d = %d",
-							addrRa, datOutRa, addrRb, datOutRb) ;
-			#1 datW = datW + 1;
-		end
-		**/
 	end	
 	
 	always #1 clk = ~clk;
-	always #140 RegWrite = ~RegWrite;
-	always begin
-		#280 rst = ~rst;
-		RegWrite = ~RegWrite;
-		//$display("rst: %d, regA[%d] = %d y regB[%d] = %d", 
-		//			rst, addrRa, datOutRa, addrRb, datOutRb);
-		
-	end
-		
 	
       
 endmodule
