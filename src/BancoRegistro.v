@@ -20,22 +20,34 @@ module BancoRegistro #(      		 // Se definen los parametros
     );
 
 
-localparam NREG = 2 ** BIT_ADDR; // Numero de registros (2**3=8)
-  
-//configiración del banco de registro 
-reg [BIT_DATO-1: 0] breg [NREG-1:0];
+	localparam NREG = 2 ** BIT_ADDR; // Numero de registros (2**3=8)
+
+	// configiración del banco de registro
+
+	// reg [size each reg] name [num of regs]
+	// reg 3:0 breg 7:0
+	// 8 regs de 4 bits cada uno
+	reg [BIT_DATO-1: 0] breg [NREG-1:0];
 
 
-assign  datOutRa = breg[addrRa]; // El dato de salida será igual a lo que tenga el banco de registros en esa dirección
-assign  datOutRb = breg[addrRb];
+	assign  datOutRa = breg[addrRa]; // El dato de salida será igual a lo que tenga el banco de registros en esa dirección
+	assign  datOutRb = breg[addrRb];
 
-// Esto es para la escritura:
-always @(posedge clk) begin // Para todo flanco de reloj ascendente
-	if (RegWrite == 1) // Siempre que la señal RegWrite sea 1
-     breg[addrW] <= datW; // El banco de registros en esa dirección dada será datW
-  end
-
-
-
+	// Esto es para la escritura:
+	always @(posedge clk) begin // Para todo flanco de reloj ascendente 
+		if (RegWrite == 1) // Siempre que la señal RegWrite sea 1
+			begin
+				breg[addrW] <= datW; // El banco de registros en esa dirección dada será datW
+			end
+		if (rst == 1) begin
+			breg[0] <= 1;
+			breg[1] <= 1;
+			breg[2] <= 1;
+			breg[3] <= 1;
+			breg[4] <= 1;
+			breg[5] <= 1;
+			breg[6] <= 1;
+		end
+	end
 endmodule
 

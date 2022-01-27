@@ -1,4 +1,4 @@
-# LABORATORIO 04- Diseño de banco de registro.
+# LABORATORIO 04 - Diseño de banco de registro.
 
 * Nicolás Velásquez Ospina
 * Jhair Steven Gallego Mendez

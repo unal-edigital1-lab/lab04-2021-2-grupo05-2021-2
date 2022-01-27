@@ -3,7 +3,7 @@
 module Bancoreg(
     input [2:0] addrRa,  // Dirección registro A
 	 input [2:0] addrRb,  // Dirección registro B
-	 input [2:0] addW,    // Dirrección de escritura
+	 input [2:0] addrW,    // Dirrección de escritura
 	 input [3:0] datW,    // Dato a escribir
     input RegWrite, 		 // Señal para guardar el dato
 	 input clk, 			 // Reloj
