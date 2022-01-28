@@ -1,5 +1,5 @@
 Flow report for Bancoreg
-Thu Jan 27 13:30:25 2022
+Thu Jan 27 19:21:02 2022
 Quartus Prime Version 20.1.0 Build 711 06/05/2020 SJ Lite Edition
 
 
@@ -41,18 +41,18 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +------------------------------------+---------------------------------------------+
-; Flow Status                        ; Successful - Thu Jan 27 13:30:25 2022       ;
+; Flow Status                        ; Successful - Thu Jan 27 19:21:02 2022       ;
 ; Quartus Prime Version              ; 20.1.0 Build 711 06/05/2020 SJ Lite Edition ;
 ; Revision Name                      ; Bancoreg                                    ;
 ; Top-level Entity Name              ; Bancoreg                                    ;
 ; Family                             ; Cyclone IV E                                ;
 ; Device                             ; EP4CE10E22C8                                ;
 ; Timing Models                      ; Final                                       ;
-; Total logic elements               ; 80 / 10,320 ( < 1 % )                       ;
-;     Total combinational functions  ; 65 / 10,320 ( < 1 % )                       ;
-;     Dedicated logic registers      ; 42 / 10,320 ( < 1 % )                       ;
-; Total registers                    ; 42                                          ;
-; Total pins                         ; 27 / 92 ( 29 % )                            ;
+; Total logic elements               ; 93 / 10,320 ( < 1 % )                       ;
+;     Total combinational functions  ; 77 / 10,320 ( < 1 % )                       ;
+;     Dedicated logic registers      ; 45 / 10,320 ( < 1 % )                       ;
+; Total registers                    ; 45                                          ;
+; Total pins                         ; 30 / 92 ( 33 % )                            ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0 / 423,936 ( 0 % )                         ;
 ; Embedded Multiplier 9-bit elements ; 0 / 46 ( 0 % )                              ;
@@ -65,7 +65,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 01/27/2022 13:30:03 ;
+; Start date & time ; 01/27/2022 19:20:37 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; Bancoreg            ;
 +-------------------+---------------------+
@@ -76,7 +76,7 @@ https://fpgasoftware.intel.com/eula.
 +--------------------------------------+----------------------------------------+---------------+-------------+-----------------------------------+
 ; Assignment Name                      ; Value                                  ; Default Value ; Entity Name ; Section Id                        ;
 +--------------------------------------+----------------------------------------+---------------+-------------+-----------------------------------+
-; COMPILER_SIGNATURE_ID                ; 238338864063882.164330820200448        ; --            ; --          ; --                                ;
+; COMPILER_SIGNATURE_ID                ; 238338864063882.164332923710144        ; --            ; --          ; --                                ;
 ; EDA_DESIGN_INSTANCE_NAME             ; NA                                     ; --            ; --          ; TB_bancoreg                       ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST      ; Off                                    ; --            ; --          ; eda_board_design_timing           ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST      ; Off                                    ; --            ; --          ; eda_board_design_boundary_scan    ;
@@ -107,12 +107,12 @@ https://fpgasoftware.intel.com/eula.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:10     ; 1.0                     ; 4759 MB             ; 00:00:26                           ;
-; Fitter               ; 00:00:04     ; 1.0                     ; 5490 MB             ; 00:00:05                           ;
-; Assembler            ; 00:00:01     ; 1.0                     ; 4676 MB             ; 00:00:01                           ;
-; Timing Analyzer      ; 00:00:02     ; 1.0                     ; 4753 MB             ; 00:00:02                           ;
+; Analysis & Synthesis ; 00:00:11     ; 1.0                     ; 4759 MB             ; 00:00:28                           ;
+; Fitter               ; 00:00:05     ; 1.0                     ; 5494 MB             ; 00:00:06                           ;
+; Assembler            ; 00:00:01     ; 1.0                     ; 4677 MB             ; 00:00:01                           ;
+; Timing Analyzer      ; 00:00:02     ; 1.0                     ; 4755 MB             ; 00:00:02                           ;
 ; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 4636 MB             ; 00:00:01                           ;
-; Total                ; 00:00:18     ; --                      ; --                  ; 00:00:35                           ;
+; Total                ; 00:00:20     ; --                      ; --                  ; 00:00:38                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

@@ -14,7 +14,8 @@ datW[2] => datW[2].IN2
 datW[3] => datW[3].IN2
 RegWrite => RegWrite.IN1
 clk => clk.IN2
-rst => rst.IN2
+rst => rst.IN1
+rstD => rstD.IN1
 sseg[6] << display:disp.port8
 sseg[5] << display:disp.port8
 sseg[4] << display:disp.port8
@@ -26,6 +27,8 @@ an[0] << display:disp.port9
 an[1] << display:disp.port9
 an[2] << display:disp.port9
 an[3] << display:disp.port9
+an[4] << display:disp.port9
+an[5] << display:disp.port9
 
 
 |Bancoreg|BancoRegistro:bancoRegistro
@@ -164,24 +167,24 @@ rst => always0.IN1
 datoRA[0] => Mux3.IN0
 datoRA[1] => Mux2.IN0
 datoRA[2] => Mux1.IN0
-datoRA[3] => Mux0.IN2
+datoRA[3] => Mux0.IN3
 datoRB[0] => Mux3.IN1
 datoRB[1] => Mux2.IN1
 datoRB[2] => Mux1.IN1
-datoRB[3] => Mux0.IN3
+datoRB[3] => Mux0.IN4
 addRa[0] => Mux3.IN2
 addRa[1] => Mux2.IN2
 addRa[2] => Mux1.IN2
 addRb[0] => Mux3.IN3
 addRb[1] => Mux2.IN3
 addRb[2] => Mux1.IN3
-addrW[0] => ~NO_FANOUT~
-addrW[1] => ~NO_FANOUT~
-addrW[2] => ~NO_FANOUT~
-datW[0] => ~NO_FANOUT~
-datW[1] => ~NO_FANOUT~
-datW[2] => ~NO_FANOUT~
-datW[3] => ~NO_FANOUT~
+addrW[0] => Mux3.IN4
+addrW[1] => Mux2.IN4
+addrW[2] => Mux1.IN4
+datW[0] => Mux3.IN5
+datW[1] => Mux2.IN5
+datW[2] => Mux1.IN5
+datW[3] => Mux0.IN5
 clk => bcd[0].CLK
 clk => bcd[1].CLK
 clk => bcd[2].CLK
@@ -194,14 +197,18 @@ clk => an[4]~reg0.CLK
 clk => an[5]~reg0.CLK
 clk => count[0].CLK
 clk => count[1].CLK
+clk => count[2].CLK
 rst => count.OUTPUTSELECT
 rst => count.OUTPUTSELECT
+rst => count.OUTPUTSELECT
 rst => an.OUTPUTSELECT
 rst => an.OUTPUTSELECT
 rst => an.OUTPUTSELECT
 rst => an.OUTPUTSELECT
-rst => bcd[1].ENA
+rst => an.OUTPUTSELECT
+rst => an.OUTPUTSELECT
 rst => bcd[0].ENA
+rst => bcd[1].ENA
 rst => bcd[2].ENA
 rst => bcd[3].ENA
 sseg[6] <= BCDtoSSeg:bcdtosseg.SSeg[6]

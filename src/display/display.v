@@ -19,25 +19,25 @@ module display (
 	BCDtoSSeg bcdtosseg(.BCD(bcd), .SSeg(sseg));
 
 
-	reg [1:0] count = 0;
+	reg [2:0] count = 0;
 	always @(posedge clk) begin
 			if(rst == 0) begin // cambiar a 1 para simulación en ModelSim
 				count <= 0;
 				an <= 6'b111111; 
 			end else begin 
-				if (count == 5) begin
+				if (count == 6) begin
 					count <= 0;
 				end else begin
 					count <= count + 1;
+					case (count) 
+						3'b000: begin bcd <= datoRA;   an <= 6'b111110; end 
+						3'b001: begin bcd <= addRa;    an <= 6'b111101; end 
+						3'b010: begin bcd <= datoRB;   an <= 6'b111011; end 
+						3'b011: begin bcd <= addRb;    an <= 6'b110111; end 
+						3'b100: begin bcd <= datW;     an <= 6'b101111; end 
+						3'b101: begin bcd <= addrW;    an <= 6'b011111; end 
+					endcase
 				end
-				case (count) 
-					2'h0: begin bcd <= datoRA;   an <= 6'b111110; end 
-					2'h2: begin bcd <= addRa;    an <= 6'b111101; end 
-					2'h1: begin bcd <= datoRB;   an <= 6'b111011; end 
-					2'h3: begin bcd <= addRb;    an <= 6'b110111; end 
-					2'h4: begin bcd <= datW;     an <= 6'b101111; end 
-					2'h5: begin bcd <= addrW;    an <= 6'b011111; end 
-				endcase
 			end
 	end
 
