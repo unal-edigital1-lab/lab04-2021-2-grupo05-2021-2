@@ -11,12 +11,11 @@ module Bancoreg (
 	input [3:0] datW,     // Dato a escribir
     input RegWrite, 	  // Señal activación escritura de registros
 	input clk, 			  // Señal de Reloj
-	input rst, 		  // reset
-	input rstD,
+	input rst, 		  	  // reset
 	
     output [0:6] sseg,
     output [5:0] an
-	 );
+	);
 	
 	wire [3:0] datOutRa;
     wire [3:0] datOutRb;
@@ -28,6 +27,6 @@ module Bancoreg (
 
 	// instancia modulo display
 	display disp(datOutRa, datOutRb, addrRa, 
-					 addrRb, addrW, datW, clk, rstD, sseg, an);
+					 addrRb, addrW, datW, clk, rst, sseg, an);
 
 endmodule

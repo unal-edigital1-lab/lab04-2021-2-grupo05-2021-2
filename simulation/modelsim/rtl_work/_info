@@ -10,23 +10,23 @@ z2
 cModel Technology
 Z0 dG:/Users/Administrador/Documents/UNAL Docs/2021 - II/Electronica Digital I/Lab/lab04-2021-2-grupo05-2021-2/simulation/modelsim
 vBancoreg
-Z1 !s110 1643329276
+Z1 !s110 1643343525
 !i10b 1
-!s100 9`0Uh:nkRmeTN^lg>K1K^1
+!s100 n@Hb3WbLM901UF=6<cafS3
 Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
-I1jQ4CTQVPNWhbQ=MGz@;V1
+I3zjBl5dZU3HUibSJ7[8Nf3
 Z3 VDg1SIo80bB@j0V0VzS_@n1
 R0
-w1643324657
+w1643341264
 8G:/Users/Administrador/Documents/UNAL Docs/2021 - II/Electronica Digital I/Lab/lab04-2021-2-grupo05-2021-2/Bancoreg.v
 FG:/Users/Administrador/Documents/UNAL Docs/2021 - II/Electronica Digital I/Lab/lab04-2021-2-grupo05-2021-2/Bancoreg.v
 !i122 3
-L0 7 27
+L0 7 26
 Z4 OV;L;2020.1;71
 r1
 !s85 0
 31
-Z5 !s108 1643329276.000000
+Z5 !s108 1643343525.000000
 !s107 G:/Users/Administrador/Documents/UNAL Docs/2021 - II/Electronica Digital I/Lab/lab04-2021-2-grupo05-2021-2/Bancoreg.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+G:/Users/Administrador/Documents/UNAL Docs/2021 - II/Electronica Digital I/Lab/lab04-2021-2-grupo05-2021-2|G:/Users/Administrador/Documents/UNAL Docs/2021 - II/Electronica Digital I/Lab/lab04-2021-2-grupo05-2021-2/Bancoreg.v|
 !i113 1
@@ -87,21 +87,21 @@ n@b@c@dto@s@seg
 vdisplay
 R1
 !i10b 1
-!s100 ?6cnNKQEiO9P1NYNDkee31
+!s100 VmzK?6O9C<EiUabI^1_^Y0
 R2
-IZF^NNeDAnb5Un9Ha^Z72E2
+I]94FHJ4a`[HcajVQH<Ki=0
 R3
 R0
-w1643327675
+w1643338630
 8G:/Users/Administrador/Documents/UNAL Docs/2021 - II/Electronica Digital I/Lab/lab04-2021-2-grupo05-2021-2/src/display/display.v
 FG:/Users/Administrador/Documents/UNAL Docs/2021 - II/Electronica Digital I/Lab/lab04-2021-2-grupo05-2021-2/src/display/display.v
 !i122 0
-L0 3 42
+L0 3 55
 R4
 r1
 !s85 0
 31
-R5
+!s108 1643343524.000000
 !s107 G:/Users/Administrador/Documents/UNAL Docs/2021 - II/Electronica Digital I/Lab/lab04-2021-2-grupo05-2021-2/src/display/display.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+G:/Users/Administrador/Documents/UNAL Docs/2021 - II/Electronica Digital I/Lab/lab04-2021-2-grupo05-2021-2/src/display|G:/Users/Administrador/Documents/UNAL Docs/2021 - II/Electronica Digital I/Lab/lab04-2021-2-grupo05-2021-2/src/display/display.v|
 !i113 1
@@ -109,23 +109,23 @@ R6
 R9
 R8
 vTB_bancoreg
-!s110 1643329277
+R1
 !i10b 1
-!s100 INb5F4O>Ho3ZTH;doT7:>1
+!s100 ;ABUSJNm_:_kG9oe^a]J:1
 R2
-IT0;KJkJ0;NYhMj@X>mA6Q2
+I_[bUX1JDazMNzSh30IfMd3
 R3
 R0
-w1643329236
+w1643343412
 8G:/Users/Administrador/Documents/UNAL Docs/2021 - II/Electronica Digital I/Lab/lab04-2021-2-grupo05-2021-2/TB_bancoreg.v
 FG:/Users/Administrador/Documents/UNAL Docs/2021 - II/Electronica Digital I/Lab/lab04-2021-2-grupo05-2021-2/TB_bancoreg.v
 !i122 4
-L0 3 65
+L0 3 66
 R4
 r1
 !s85 0
 31
-!s108 1643329277.000000
+R5
 !s107 G:/Users/Administrador/Documents/UNAL Docs/2021 - II/Electronica Digital I/Lab/lab04-2021-2-grupo05-2021-2/TB_bancoreg.v|
 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+G:/Users/Administrador/Documents/UNAL Docs/2021 - II/Electronica Digital I/Lab/lab04-2021-2-grupo05-2021-2|G:/Users/Administrador/Documents/UNAL Docs/2021 - II/Electronica Digital I/Lab/lab04-2021-2-grupo05-2021-2/TB_bancoreg.v|
 !i113 1

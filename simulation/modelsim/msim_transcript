@@ -12,66 +12,66 @@
 # 
 # vlog -vlog01compat -work work +incdir+G:/Users/Administrador/Documents/UNAL\ Docs/2021\ -\ II/Electronica\ Digital\ I/Lab/lab04-2021-2-grupo05-2021-2/src/display {G:/Users/Administrador/Documents/UNAL Docs/2021 - II/Electronica Digital I/Lab/lab04-2021-2-grupo05-2021-2/src/display/display.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 19:21:16 on Jan 27,2022
+# Start time: 23:18:44 on Jan 27,2022
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+G:/Users/Administrador/Documents/UNAL Docs/2021 - II/Electronica Digital I/Lab/lab04-2021-2-grupo05-2021-2/src/display" G:/Users/Administrador/Documents/UNAL Docs/2021 - II/Electronica Digital I/Lab/lab04-2021-2-grupo05-2021-2/src/display/display.v 
 # -- Compiling module display
 # 
 # Top level modules:
 # 	display
-# End time: 19:21:16 on Jan 27,2022, Elapsed time: 0:00:00
+# End time: 23:18:45 on Jan 27,2022, Elapsed time: 0:00:01
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+G:/Users/Administrador/Documents/UNAL\ Docs/2021\ -\ II/Electronica\ Digital\ I/Lab/lab04-2021-2-grupo05-2021-2/src/display {G:/Users/Administrador/Documents/UNAL Docs/2021 - II/Electronica Digital I/Lab/lab04-2021-2-grupo05-2021-2/src/display/BCDtoSSeg.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 19:21:16 on Jan 27,2022
+# Start time: 23:18:45 on Jan 27,2022
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+G:/Users/Administrador/Documents/UNAL Docs/2021 - II/Electronica Digital I/Lab/lab04-2021-2-grupo05-2021-2/src/display" G:/Users/Administrador/Documents/UNAL Docs/2021 - II/Electronica Digital I/Lab/lab04-2021-2-grupo05-2021-2/src/display/BCDtoSSeg.v 
 # -- Compiling module BCDtoSSeg
 # 
 # Top level modules:
 # 	BCDtoSSeg
-# End time: 19:21:16 on Jan 27,2022, Elapsed time: 0:00:00
+# End time: 23:18:45 on Jan 27,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+G:/Users/Administrador/Documents/UNAL\ Docs/2021\ -\ II/Electronica\ Digital\ I/Lab/lab04-2021-2-grupo05-2021-2/src/bancoRegistro {G:/Users/Administrador/Documents/UNAL Docs/2021 - II/Electronica Digital I/Lab/lab04-2021-2-grupo05-2021-2/src/bancoRegistro/BancoRegistro.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 19:21:16 on Jan 27,2022
+# Start time: 23:18:45 on Jan 27,2022
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+G:/Users/Administrador/Documents/UNAL Docs/2021 - II/Electronica Digital I/Lab/lab04-2021-2-grupo05-2021-2/src/bancoRegistro" G:/Users/Administrador/Documents/UNAL Docs/2021 - II/Electronica Digital I/Lab/lab04-2021-2-grupo05-2021-2/src/bancoRegistro/BancoRegistro.v 
 # -- Compiling module BancoRegistro
 # 
 # Top level modules:
 # 	BancoRegistro
-# End time: 19:21:16 on Jan 27,2022, Elapsed time: 0:00:00
+# End time: 23:18:45 on Jan 27,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # vlog -vlog01compat -work work +incdir+G:/Users/Administrador/Documents/UNAL\ Docs/2021\ -\ II/Electronica\ Digital\ I/Lab/lab04-2021-2-grupo05-2021-2 {G:/Users/Administrador/Documents/UNAL Docs/2021 - II/Electronica Digital I/Lab/lab04-2021-2-grupo05-2021-2/Bancoreg.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 19:21:16 on Jan 27,2022
+# Start time: 23:18:45 on Jan 27,2022
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+G:/Users/Administrador/Documents/UNAL Docs/2021 - II/Electronica Digital I/Lab/lab04-2021-2-grupo05-2021-2" G:/Users/Administrador/Documents/UNAL Docs/2021 - II/Electronica Digital I/Lab/lab04-2021-2-grupo05-2021-2/Bancoreg.v 
 # -- Compiling module Bancoreg
 # 
 # Top level modules:
 # 	Bancoreg
-# End time: 19:21:16 on Jan 27,2022, Elapsed time: 0:00:00
+# End time: 23:18:45 on Jan 27,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vlog -vlog01compat -work work +incdir+G:/Users/Administrador/Documents/UNAL\ Docs/2021\ -\ II/Electronica\ Digital\ I/Lab/lab04-2021-2-grupo05-2021-2 {G:/Users/Administrador/Documents/UNAL Docs/2021 - II/Electronica Digital I/Lab/lab04-2021-2-grupo05-2021-2/TB_bancoreg.v}
 # Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
-# Start time: 19:21:17 on Jan 27,2022
+# Start time: 23:18:45 on Jan 27,2022
 # vlog -reportprogress 300 -vlog01compat -work work "+incdir+G:/Users/Administrador/Documents/UNAL Docs/2021 - II/Electronica Digital I/Lab/lab04-2021-2-grupo05-2021-2" G:/Users/Administrador/Documents/UNAL Docs/2021 - II/Electronica Digital I/Lab/lab04-2021-2-grupo05-2021-2/TB_bancoreg.v 
 # -- Compiling module TB_bancoreg
 # 
 # Top level modules:
 # 	TB_bancoreg
-# End time: 19:21:17 on Jan 27,2022, Elapsed time: 0:00:00
+# End time: 23:18:45 on Jan 27,2022, Elapsed time: 0:00:00
 # Errors: 0, Warnings: 0
 # 
 # vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs="+acc"  Bancoreg
 # vsim -t 1ps -L altera_ver -L lpm_ver -L sgate_ver -L altera_mf_ver -L altera_lnsim_ver -L cycloneive_ver -L rtl_work -L work -voptargs=""+acc"" Bancoreg 
-# Start time: 19:21:17 on Jan 27,2022
+# Start time: 23:18:46 on Jan 27,2022
 # Loading work.Bancoreg
 # Loading work.BancoRegistro
 # Loading work.display
 # Loading work.BCDtoSSeg
 # ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'disp'.  Expected 11, found 10.
-#    Time: 0 ps  Iteration: 0  Instance: /Bancoreg/disp File: G:/Users/Administrador/Documents/UNAL Docs/2021 - II/Electronica Digital I/Lab/lab04-2021-2-grupo05-2021-2/Bancoreg.v Line: 30
-# ** Warning: (vsim-3722) G:/Users/Administrador/Documents/UNAL Docs/2021 - II/Electronica Digital I/Lab/lab04-2021-2-grupo05-2021-2/Bancoreg.v(30): [TFMPC] - Missing connection for port 'led'.
+#    Time: 0 ps  Iteration: 0  Instance: /Bancoreg/disp File: G:/Users/Administrador/Documents/UNAL Docs/2021 - II/Electronica Digital I/Lab/lab04-2021-2-grupo05-2021-2/Bancoreg.v Line: 29
+# ** Warning: (vsim-3722) G:/Users/Administrador/Documents/UNAL Docs/2021 - II/Electronica Digital I/Lab/lab04-2021-2-grupo05-2021-2/Bancoreg.v(29): [TFMPC] - Missing connection for port 'led'.
 # 
 # add wave *
 # view structure
@@ -80,25 +80,31 @@
 # .main_pane.objects.interior.cs.body.tree
 # run -all
 vsim work.TB_bancoreg
-# End time: 19:21:28 on Jan 27,2022, Elapsed time: 0:00:11
+# End time: 23:19:32 on Jan 27,2022, Elapsed time: 0:00:46
 # Errors: 0, Warnings: 2
 # vsim work.TB_bancoreg 
-# Start time: 19:21:28 on Jan 27,2022
+# Start time: 23:19:32 on Jan 27,2022
 # Loading work.TB_bancoreg
 # Loading work.Bancoreg
 # Loading work.BancoRegistro
 # Loading work.display
 # Loading work.BCDtoSSeg
 # ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'disp'.  Expected 11, found 10.
-#    Time: 0 ps  Iteration: 0  Instance: /TB_bancoreg/bacoReg/disp File: G:/Users/Administrador/Documents/UNAL Docs/2021 - II/Electronica Digital I/Lab/lab04-2021-2-grupo05-2021-2/Bancoreg.v Line: 30
-# ** Warning: (vsim-3722) G:/Users/Administrador/Documents/UNAL Docs/2021 - II/Electronica Digital I/Lab/lab04-2021-2-grupo05-2021-2/Bancoreg.v(30): [TFMPC] - Missing connection for port 'led'.
+#    Time: 0 ps  Iteration: 0  Instance: /TB_bancoreg/bacoReg/disp File: G:/Users/Administrador/Documents/UNAL Docs/2021 - II/Electronica Digital I/Lab/lab04-2021-2-grupo05-2021-2/Bancoreg.v Line: 29
+# ** Warning: (vsim-3722) G:/Users/Administrador/Documents/UNAL Docs/2021 - II/Electronica Digital I/Lab/lab04-2021-2-grupo05-2021-2/Bancoreg.v(29): [TFMPC] - Missing connection for port 'led'.
 add wave sim:/TB_bancoreg/*
 run
 restart
 # ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
 # ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'disp'.  Expected 11, found 10.
-#    Time: 0 ps  Iteration: 0  Instance: /TB_bancoreg/bacoReg/disp File: G:/Users/Administrador/Documents/UNAL Docs/2021 - II/Electronica Digital I/Lab/lab04-2021-2-grupo05-2021-2/Bancoreg.v Line: 30
-# ** Warning: (vsim-3722) G:/Users/Administrador/Documents/UNAL Docs/2021 - II/Electronica Digital I/Lab/lab04-2021-2-grupo05-2021-2/Bancoreg.v(30): [TFMPC] - Missing connection for port 'led'.
+#    Time: 0 ps  Iteration: 0  Instance: /TB_bancoreg/bacoReg/disp File: G:/Users/Administrador/Documents/UNAL Docs/2021 - II/Electronica Digital I/Lab/lab04-2021-2-grupo05-2021-2/Bancoreg.v Line: 29
+# ** Warning: (vsim-3722) G:/Users/Administrador/Documents/UNAL Docs/2021 - II/Electronica Digital I/Lab/lab04-2021-2-grupo05-2021-2/Bancoreg.v(29): [TFMPC] - Missing connection for port 'led'.
 run
-# End time: 19:24:55 on Jan 27,2022, Elapsed time: 0:03:27
+restart
+# ** Note: (vsim-12125) Error and warning message counts have been reset to '0' because of 'restart'.
+# ** Warning: (vsim-2685) [TFMPC] - Too few port connections for 'disp'.  Expected 11, found 10.
+#    Time: 0 ps  Iteration: 0  Instance: /TB_bancoreg/bacoReg/disp File: G:/Users/Administrador/Documents/UNAL Docs/2021 - II/Electronica Digital I/Lab/lab04-2021-2-grupo05-2021-2/Bancoreg.v Line: 29
+# ** Warning: (vsim-3722) G:/Users/Administrador/Documents/UNAL Docs/2021 - II/Electronica Digital I/Lab/lab04-2021-2-grupo05-2021-2/Bancoreg.v(29): [TFMPC] - Missing connection for port 'led'.
+run
+# End time: 23:28:44 on Jan 27,2022, Elapsed time: 0:09:12
 # Errors: 0, Warnings: 2

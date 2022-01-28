@@ -56,10 +56,6 @@
 					"strict" : false
 				},
 				{
-					"name" : "clk",
-					"strict" : false
-				},
-				{
 					"name" : "datW[0]",
 					"strict" : false
 				},
@@ -92,7 +88,7 @@
 					"strict" : false
 				},
 				{
-					"name" : "rstD",
+					"name" : "rst",
 					"strict" : false
 				},
 				{
@@ -116,7 +112,7 @@
 					"strict" : false
 				},
 				{
-					"name" : "rst",
+					"name" : "clk",
 					"strict" : false
 				},
 				{
